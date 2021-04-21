@@ -1,0 +1,278 @@
+/* Root css */
+*::selection {
+    background-color: #e84393;
+    color: #fff;
+
+}
+
+* {
+    font-family:"Source Sans Pro", sans-serif;
+    scroll-behavior: smooth;
+    
+}
+
+/* Herader Section css here */
+.header-section {
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    background: rgba(8, 6, 6, 0.9);
+}
+
+
+
+.navbar .navbar-brand {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.navbar .navbar-brand:hover {
+    color: #e84393;
+    background-color: transparent;
+}
+
+.navbar .navbar-brand::first-letter {
+    font-size: 3rem;
+    letter-spacing: 2px;
+    color: #e84393;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #fff;
+    text-transform: uppercase;
+    transition: 0.5s ease-in-out;
+
+}
+
+/* .navbar .navbar-nav .nav-link::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: transparent;
+    transition: width 0.3s , background-color 0.3s;
+} */
+.navbar .navbar-nav .nav-link:hover {
+    color: #e84393;
+    background-color: transparent;
+}
+
+/* .navbar .navbar-nav .nav-link:hover::after{
+    width: 100%;
+    height: 100%;
+    background-color: #e84393;
+    color: #e84393;
+} */
+
+
+/* Video section css here */
+
+.banner-section {
+    width: 100%;
+    height: 100%;
+
+
+
+
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+
+
+}
+
+.banner-section video {
+
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    /* position: fixed; */
+    /* top: 50%;
+    left: 50%;
+    transform: translatex(-50%) translateY(-50%); */
+    background-size: cover;
+    object-fit: cover;
+    box-sizing: border-box;
+    /* z-index: -99; */
+    transition: .1s;
+
+}
+
+
+
+
+.video-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    margin-left: 6rem;
+}
+
+/* video btn */
+.video-btn {
+    margin-top: 25px;
+}
+
+.video-btn a {
+    text-decoration: none;
+    background-color: #e84393;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 15px 20px;
+    transition: .5s ease-in-out;
+}
+
+
+.video-btn a:hover {
+    color: red;
+    background-color: #fff;
+}
+
+
+/* About section css here */
+.about-section {
+    margin: 120px 0px;
+}
+
+.about-content h5 {
+    letter-spacing: 15px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.about-content h3 {
+    font-weight: 200;
+    font-size: 3.5rem;
+    letter-spacing: 3px;
+
+}
+
+/* gallary section css */
+
+.gallary-section a {
+    text-decoration: none;
+}
+
+.gallary-section a:hover {
+    color: #fff;
+}
+
+.gallary-section .g-img {
+    position: relative;
+    transition: ease-in-out .4s;
+    overflow: hidden;
+    margin-bottom: 1rem;
+
+}
+
+.gallary-section .g-img img {
+    transition: ease-in-out .5s;
+}
+
+.gallary-section .g-img:hover img {
+    transform: scale(1.1);
+}
+
+.g-img .img-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+
+    visibility: hidden;
+    text-align: center;
+    padding-top: 13rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: ease-in-out .5s;
+}
+
+.g-img:hover .img-content {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* slider / teame css */
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.img-text h5 {
+    font-weight: 200;
+}
+
+.team h4 {
+    font-weight: 200;
+    font-size: 50px;
+}
+
+
+/* Contact section css here */
+
+.contact h4{
+    font-weight: 200;
+    font-size: 50px;
+}
+#contact .form-control{
+    border: none;
+    box-shadow: none;
+    overflow: hidden;
+    font-size: 20px;
+    font-weight: normal;
+    padding: 10px 15px;
+}
+
+#contact{
+    background: url(./image\'s/contact-bg.jpg) 50% 0 fixed;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+
+/* fotter Section css here */
+
+#fotter h2,p,a{
+    font-weight: 200;
+}
+
